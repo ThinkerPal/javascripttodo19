@@ -1,8 +1,8 @@
-import AppHeader from "./components/AppHeader.vue"
+import Vue from "vue";
+import App from "./App.vue";
 
-export default {
-  name: "App",
-  components: {AppHeader}
-};
-
-
+new Vue({
+  el: "#app",
+  components: { App },
+  template: "<App></App>"
+});
